@@ -1,2 +1,2 @@
-# CosmicEncounter
+# Quiz
 Quiz / Programmiermethoden
