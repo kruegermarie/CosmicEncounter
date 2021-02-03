@@ -2,8 +2,9 @@
 public class TicTacToe {
 
 	public static void main(String[] args) {
-		// TODO Auto-generated method stub
-
+		
+		
+		// Erstellen des Spielbretts 
 		char[][] Spielbrett = {{' ', '|', ' ', '|', ' '}, 
 				               {'-', '+', '-', '+', '-'},
 				               {' ', '|', ' ', '|', ' '}, 
