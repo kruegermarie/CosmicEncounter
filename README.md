@@ -1,2 +1,2 @@
-# Quiz
-Quiz / Programmiermethoden
+# TicTacToe
+Progmeth
