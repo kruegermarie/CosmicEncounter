@@ -1,3 +1,5 @@
+import java.util.Scanner;
+
 public class progmeth {
 
 	public static void main(String[] args) {
@@ -10,7 +12,13 @@ public class progmeth {
 	               {' ', '|', ' ', '|', ' '}};
 		
 	printSpielbrett(Spielbrett);
-	
+			Scanner scan = new Scanner(System.in);
+			System.out.println("Wo moechtest du setzen? (1-9)");
+			int pos = scan.nextInt();
+			
+			System.out.println(pos);
+			//Ausgabe von dem was eingegeben wurde
+			
 	}
 		
 	public static void printSpielbrett(char [][] Spielbrett ) {
