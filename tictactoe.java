@@ -1,4 +1,5 @@
-import java.util.Scanner;
+import java.util.Random; //pos for cpu
+import java.util.Scanner; //pos for player
 
 public class progmeth {
 
@@ -20,10 +21,15 @@ public class progmeth {
 
 		place (Spielbrett, pos, "player");
 		
+		
+		Random rand = new Random();
+
+		place (Spielbrett, pos, "cpu"); //pos eingabe player = random
+		
+		
 		printSpielbrett(Spielbrett);
 
 	}
-	
 	
 	
 		public static void printSpielbrett(char [][] Spielbrett ) {
@@ -37,10 +43,10 @@ public class progmeth {
 	}
 
 }
-		public static void place(char[][] Spielbrett, int pos, String user) { //string use for owner of X or O
+		public static void place(char[][] Spielbrett, int pos, String user) {
 
 
-
+			//owner of X and O
 			char symbol = ' ';
 			
 			if(user.equals("player")) {
