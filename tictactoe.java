@@ -17,6 +17,8 @@ public class progmeth {
 		int pos = scan.nextInt();
 			
 		System.out.println(pos);
+
+		place (Spielbrett, pos, "player");
 		
 		printSpielbrett(Spielbrett);
 
@@ -35,8 +37,18 @@ public class progmeth {
 	}
 
 }
-		public static void (char[][] Spielbrett, int pos) {
+		public static void place(char[][] Spielbrett, int pos, String user) { //string use for owner of X or O
 
+
+
+			char symbol = ' ';
+			
+			if(user.equals("player")) {
+				symbol = 'X';
+				
+			} else if(user.equals("cpu")) {
+				symbol = 'O';
+			} 
 
 			switch(pos) {
 				case 1: 
