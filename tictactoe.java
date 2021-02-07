@@ -24,11 +24,20 @@ public class progmeth {
 			System.out.println("Wo moechtest du setzen? (1-9)");//scanner muss in while schleife
 			int playerPos = scan.nextInt(); //playerpos //cpupos
 			
+			while (playerPosition.contains(playerPos) || cpuPosition.contains(playerPosition)) {
+				System.out.println("Fehlgeschlagen, versuch es in einem nicht belegten Feld!");
+				playerPos = scan.nextInt();
+				// bugfix cpu setzt über player position
+				
+	    }
 
 			placeMove (Spielbrett, playerPos, "player");
 			
 			Random rand = new Random();
 			int cpuPos = rand.nextInt(9) + 1;
+			while (playerPosition.contains(cpuPos) || cpuPosition.contains(cpuPos)) {
+				cpuPos = rand.nextInt(9) + 1;
+			}
 			placeMove (Spielbrett, cpuPos, "cpu"); //pos eingabe player = random
 			
 			printSpielbrett(Spielbrett);
