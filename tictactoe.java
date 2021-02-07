@@ -117,11 +117,11 @@ public class progmeth {
 	        gewonnen.add(cross2);
 
 			for (List 1 : gewonnen) {
-				if (playerPosition.containsAll(1)) {
+				if (playerPosition.containsAll(1)) { //spieler gewinnt 
 					return "Du hast gewonnen!";
-				} else if (cpuPosition.contains(1)) {
+				} else if (cpuPosition.contains(1)) { //cpu gewinnt 
 					return "Der Computer hat dich geschlagen! Du hast verloren :(";
-				} else if (playerPosition.size() + cpuPosition.size() ==9 ){
+				} else if (playerPosition.size() + cpuPosition.size() ==9 ){ //unentschieden wenn spielbrett voll und kein gewinner
 					return "Unentschieden!";
 				}
 			}
