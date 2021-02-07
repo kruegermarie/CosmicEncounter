@@ -19,19 +19,27 @@ public class progmeth {
 		
 	printSpielbrett(Spielbrett);
 			
-		while(true) {  //cpu braucht anweisung f�r n�chsten zug
+		while(true) {  //cpu braucht anweisung fuer naechsten zug
 			Scanner scan = new Scanner(System.in);
 			System.out.println("Wo moechtest du setzen? (1-9)");//scanner muss in while schleife
 			int playerPos = scan.nextInt(); //playerpos //cpupos
-			
 			while (playerPosition.contains(playerPos) || cpuPosition.contains(playerPosition)) {
 				System.out.println("Fehlgeschlagen, versuch es in einem nicht belegten Feld!");
 				playerPos = scan.nextInt();
+				
+				
 				// bugfix cpu setzt über player position
 				
 	    }
 
 			placeMove (Spielbrett, playerPos, "player");
+			
+			String ergebnis = testGewinner();  //gewinner testen
+			if (ergebnis.length() > 0) {
+				System.out.println(ergebnis); 
+				break;
+				
+			}
 			
 			Random rand = new Random();
 			int cpuPos = rand.nextInt(9) + 1;
@@ -42,8 +50,11 @@ public class progmeth {
 			
 			printSpielbrett(Spielbrett);
 
-			String ergebnis = testGewinner();
-			System.out.println(ergebnis);
+			ergebnis = testGewinner();
+			if (ergebnis.length() > 0) {
+				System.out.println(ergebnis);
+			}
+			
 
 		}
 		
@@ -61,7 +72,7 @@ public class progmeth {
 	}
 
 }
-		public static void place(char[][] Spielbrett, int pos, String user) {
+		public static void placeMove(char[][] Spielbrett, int pos, String user) {
 
 			//owner of X and O
 			char symbol = ' ';
