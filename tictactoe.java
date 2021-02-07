@@ -25,13 +25,16 @@ public class progmeth {
 			int playerPos = scan.nextInt(); //playerpos //cpupos
 			
 
-			place (Spielbrett, playerPos, "player");
+			placeMove (Spielbrett, playerPos, "player");
 			
 			Random rand = new Random();
 			int cpuPos = rand.nextInt(9) + 1;
-			place (Spielbrett, cpuPos, "cpu"); //pos eingabe player = random
+			placeMove (Spielbrett, cpuPos, "cpu"); //pos eingabe player = random
 			
 			printSpielbrett(Spielbrett);
+
+			String ergebnis = testGewinner();
+			System.out.println(ergebnis);
 
 		}
 		
@@ -124,7 +127,7 @@ public class progmeth {
 	        	} else if (playerPosition.size() + cpuPosition.size() == 9) { //unentschieden wenn Spielbrett voll und kein Gewinner
 	        		return "Unentschieden!";
 	        	}
-				
+
 	        }
 			
 
