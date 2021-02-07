@@ -87,7 +87,12 @@ public class progmeth {
 					break;
 			    }
 
-		}
+			}
+			
+			public static String gewinner() {
+
+			}
+	
 						
 }
 	
