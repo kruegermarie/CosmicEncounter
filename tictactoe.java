@@ -28,7 +28,7 @@ public class progmeth {
 				playerPos = scan.nextInt();
 				
 				
-				// bugfix cpu setzt über player position
+				// bugfix cpu/player setzt �ber player/cpu position!!!!!!
 				
 	    }
 
@@ -53,6 +53,7 @@ public class progmeth {
 			ergebnis = testGewinner();
 			if (ergebnis.length() > 0) {
 				System.out.println(ergebnis);
+				break;
 			}
 			
 
