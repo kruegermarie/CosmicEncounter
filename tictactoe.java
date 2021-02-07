@@ -14,18 +14,22 @@ public class progmeth {
 	printSpielbrett(Spielbrett);
 			
 		Scanner scan = new Scanner(System.in);
-		System.out.println("Wo moechtest du setzen? (1-9)");
-		int playerPos = scan.nextInt(); //playerpos //cpupos
+
+		while(true) {  //cpu braucht anweisung f�r n�chsten zug
+			System.out.println("Wo moechtest du setzen? (1-9)");
+			int playerPos = scan.nextInt(); //playerpos //cpupos
 			
 
-		place (Spielbrett, playerPos, "player");
-		
-		Random rand = new Random();
-		int cpuPos = rand.nextInt(9) + 1;
-		place (Spielbrett, pos, "cpu"); //pos eingabe player = random
-		
-		printSpielbrett(Spielbrett);
+			place (Spielbrett, playerPos, "player");
+			
+			Random rand = new Random();
+			int cpuPos = rand.nextInt(9) + 1;
+			place (Spielbrett, pos, "cpu"); //pos eingabe player = random
+			
+			printSpielbrett(Spielbrett);
 
+		}
+		
 	}
 	
 	
