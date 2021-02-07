@@ -105,6 +105,27 @@ public class progmeth {
 	        List rightCol = Arrays.asList(3, 6, 9);
 	        List cross1   = Arrays.asList(1, 5, 9);
 	        List cross2   = Arrays.asList(7, 5, 3);
+			
+			List<List> gewonnen = new ArrayList<List>();
+	        gewonnen.add(topRow);
+	        gewonnen.add(midRow);
+	        gewonnen.add(botRow);
+	        gewonnen.add(leftCol);
+	        gewonnen.add(midCol);
+	        gewonnen.add(rightCol);
+	        gewonnen.add(cross1);
+	        gewonnen.add(cross2);
+
+			for (List 1 : gewonnen) {
+				if (playerPosition.containsAll(1)) {
+					return "Du hast gewonnen!";
+				} else if (cpuPosition.contains(1)) {
+					return "Der Computer hat dich geschlagen! Du hast verloren :(";
+				} else if (playerPosition.size() + cpuPosition.size() ==9 ){
+					return "Unentschieden!";
+				}
+			}
+			
 			return"";
 			}
 			
