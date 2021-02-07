@@ -28,13 +28,13 @@ public class progmeth {
 				playerPos = scan.nextInt();
 				
 				
-				// bugfix cpu/player setzt �ber player/cpu position!!!!!!
+				// bugfix player setzt über cpu position!!!!!!
 				
 	    }
 
 			placeMove (Spielbrett, playerPos, "player");
 			
-			String ergebnis = testGewinner();  //gewinner testen
+			String ergebnis = testGewinner();  
 			if (ergebnis.length() > 0) {
 				System.out.println(ergebnis); 
 				break;
@@ -46,8 +46,11 @@ public class progmeth {
 			while (playerPosition.contains(cpuPos) || cpuPosition.contains(cpuPos)) {
 				cpuPos = rand.nextInt(9) + 1;
 			}
+
+
 			placeMove (Spielbrett, cpuPos, "cpu"); //pos eingabe player = random
 			
+
 			printSpielbrett(Spielbrett);
 
 			ergebnis = testGewinner();
@@ -59,8 +62,7 @@ public class progmeth {
 
 		}
 		
-	}
-	
+}
 	
 		public static void printSpielbrett(char [][] Spielbrett ) {
 		for(char [] row: Spielbrett) {
@@ -75,50 +77,52 @@ public class progmeth {
 }
 		public static void placeMove(char[][] Spielbrett, int pos, String user) {
 
-			//owner of X and O
-			char symbol = ' ';
-			
-			if(user.equals("player")) {
-				symbol = 'X';
+				//owner of X and O
+				char symbol = ' ';
 				
-			} else if(user.equals("cpu")) {
-				symbol = 'O';
-			} 
+				if(user.equals("player")) {
+					symbol = 'X';
+					playerPosition.add(pos);
+					
+				} else if(user.equals("cpu")) {
+					symbol = 'O';
+					cpuPosition.add(pos);
+				} 
 
-			switch(pos) {
-				case 1: 
-					Spielbrett[0][0] = symbol;
-					break;
-				case 2: 
-					Spielbrett[0][2] = symbol;
-					break;
-				case 3: 
-					Spielbrett[0][4] = symbol;
-					break;
-				case 4: 
-					Spielbrett[2][0] = symbol;
-					break;
-				case 5: 
-					Spielbrett[2][2] = symbol;
-					break;
-				case 6: 
-					Spielbrett[2][4] = symbol;
-					break;
-				case 7: 
-					Spielbrett[4][0] = symbol;
-					break;
-				case 8: 
-					Spielbrett[4][2] = symbol;
-					break;
-				case 9: 
-					Spielbrett[4][4] = symbol;
-					break;
-				default: 
-					break;
-			    }
+				switch(pos) {
+					case 1: 
+						Spielbrett[0][0] = symbol;
+						break;
+					case 2: 
+						Spielbrett[0][2] = symbol;
+						break;
+					case 3: 
+						Spielbrett[0][4] = symbol;
+						break;
+					case 4: 
+						Spielbrett[2][0] = symbol;
+						break;
+					case 5: 
+						Spielbrett[2][2] = symbol;
+						break;
+					case 6: 
+						Spielbrett[2][4] = symbol;
+						break;
+					case 7: 
+						Spielbrett[4][0] = symbol;
+						break;
+					case 8: 
+						Spielbrett[4][2] = symbol;
+						break;
+					case 9: 
+						Spielbrett[4][4] = symbol;
+						break;
+					default: 
+						break;
+					}
 
 
-		}
+			}
 		public static String testGewinner() {
 			
 			List topRow   = Arrays.asList(1, 2, 3);
@@ -154,7 +158,6 @@ public class progmeth {
 
 			return"";
 		}
-			
-						
+								
 }
 	
