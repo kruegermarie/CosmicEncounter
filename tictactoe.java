@@ -124,6 +124,7 @@ public class progmeth {
 	        	} else if (playerPosition.size() + cpuPosition.size() == 9) { //unentschieden wenn Spielbrett voll und kein Gewinner
 	        		return "Unentschieden!";
 	        	}
+				
 	        }
 			
 
