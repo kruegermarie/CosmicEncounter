@@ -29,7 +29,7 @@ public class progmeth {
 			
 			Random rand = new Random();
 			int cpuPos = rand.nextInt(9) + 1;
-			place (Spielbrett, pos, "cpu"); //pos eingabe player = random
+			place (Spielbrett, cpuPos, "cpu"); //pos eingabe player = random
 			
 			printSpielbrett(Spielbrett);
 
@@ -116,17 +116,17 @@ public class progmeth {
 	        gewonnen.add(cross1);
 	        gewonnen.add(cross2);
 
-			for (List 1 : gewonnen) {
-				if (playerPosition.containsAll(1)) { //spieler gewinnt 
-					return "Du hast gewonnen!";
-				} else if (cpuPosition.contains(1)) { //cpu gewinnt 
-					return "Der Computer hat dich geschlagen! Du hast verloren :(";
-				} else if (playerPosition.size() + cpuPosition.size() ==9 ){ //unentschieden wenn spielbrett voll und kein gewinner
-					return "Unentschieden!";
-				}
-			}
+			for(List l : gewonnen) { 
+	        	if (playerPosition.containsAll(l)) { //spieler gewinnt
+	        		return "Du hast gewonnen!";
+	        	} else if (cpuPosition.containsAll(l)) { //cpu gewinnt
+	        		return "Der Computer hat dich geschlagen! Du hast verloren :(";
+	        	} else if (playerPosition.size() + cpuPosition.size() == 9) { //unentschieden wenn Spielbrett voll und kein Gewinner
+	        		return "Unentschieden!";
+	        	}
+	        }
 			
-			
+
 			return"";
 		}
 			
