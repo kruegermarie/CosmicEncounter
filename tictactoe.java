@@ -93,7 +93,7 @@ public class progmeth {
 					break;
 			    }
 
-<<<<<<< HEAD
+
 		}
 		public static String testGewinner() {
 			
@@ -106,14 +106,8 @@ public class progmeth {
 	        List cross1   = Arrays.asList(1, 5, 9);
 	        List cross2   = Arrays.asList(7, 5, 3);
 			return"";
-=======
 			}
 			
-			public static String gewinner() {
-
-			}
-	
 						
->>>>>>> c90448d5223a161d39c7ef7f8a41587aa7e23b11
 }
 	
