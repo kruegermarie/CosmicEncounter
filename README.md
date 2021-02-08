@@ -7,10 +7,11 @@ Du spielst gegen eine **non-AI** CPU.
 
 Version 1.0
 
-### Screenshot
+## Screenshot
+***
+![image](https://www.kindpng.com/picc/m/179-1794482_intelligent-tic-tac-toe-agent-tictactoe-png-transparent.png)
 
+## Collaboration
+***
 
-### Collaboration
-
-
-von Lukas RÃ¶tz, Marie KrÃ¼ger
+von Lukas Rötz, Marie Krüger
