@@ -9,9 +9,8 @@ Version 1.0
 
 ## TicTacToe
 ***
-![image](https://www.kindpng.com/picc/m/179-1794482_intelligent-tic-tac-toe-agent-tictactoe-png-transparent.png) {:height="50%" width="50%"}
+<img src="https://github.com/kruegermarie/CosmicEncounter/blob/main/Product%20Backlog%20-%20Screenshots/gewonnen.png" width="50%" height="50%">
 
 ## Collaboration
 ***
-
 von Lukas Rötz, Marie Krüger
