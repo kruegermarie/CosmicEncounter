@@ -1,3 +1,6 @@
+//Version 1.0
+
+
 import java.util.ArrayList; //for testGewinner
 import java.util.List;
 import java.util.Arrays;
