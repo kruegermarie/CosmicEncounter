@@ -21,7 +21,7 @@ public class progmeth {
 			
 		while(true) {  //cpu braucht anweisung fuer naechsten zug
 			Scanner scan = new Scanner(System.in);
-			System.out.println("Wo moechtest du setzen? (1-9)");//scanner muss in while schleife
+			System.out.println("Wo möchtest du setzen? (1-9)");//scanner muss in while schleife
 			int playerPos = scan.nextInt(); //playerpos //cpupos
 			while (playerPosition.contains(playerPos) || cpuPosition.contains(playerPosition)) {
 				System.out.println("Fehlgeschlagen, versuch es in einem nicht belegten Feld!");
@@ -29,6 +29,7 @@ public class progmeth {
 				
 				
 				// bugfix player setzt über cpu position!!!!!!
+
 				
 	    }
 
