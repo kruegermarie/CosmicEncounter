@@ -19,7 +19,7 @@ public class progmeth {
 		
 	printSpielbrett(Spielbrett);
 			
-		while(true) {  //cpu braucht anweisung f�r n�chsten zug
+		while(true) {  //cpu braucht anweisung für nächsten zug
 			Scanner scan = new Scanner(System.in);
 			System.out.println("Wo moechtest du setzen? (1-9)");//scanner muss in while schleife
 			int playerPos = scan.nextInt(); //playerpos //cpupos
