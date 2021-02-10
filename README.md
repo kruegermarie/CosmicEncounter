@@ -1,11 +1,11 @@
 
 ## General Info
 ***
-Das ist unser Gruppenprojekt für das Modul Programmiermethoden und -werkzeuge.
+Das ist unser Gruppenprojekt fÃ¼r das Modul Programmiermethoden und -werkzeuge.
 Wir programmieren TicTacToe mit einer visuellen Ausgabe in der Konsole. 
 Du spielst gegen eine **non-AI** CPU.
 
-Version 1.0
+Version 1.1
 
 ## TicTacToe
 ***
@@ -13,4 +13,4 @@ Version 1.0
 
 ## Collaboration
 ***
-von Lukas Rötz, Marie Krüger
+von Lukas RÃ¶tz, Marie KrÃ¼ger
