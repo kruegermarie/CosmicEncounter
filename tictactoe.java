@@ -7,7 +7,7 @@ import java.util.Arrays;
 import java.util.Random; //pos for cpu
 import java.util.Scanner; //pos for player
 
-public class progmeth {
+public class tictactoe {
 
 	static ArrayList<Integer> playerPosition = new ArrayList<Integer>();
 	static ArrayList<Integer> cpuPosition = new ArrayList<Integer>();
